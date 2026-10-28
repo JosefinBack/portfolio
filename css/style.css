@@ -1,0 +1,60 @@
+:root {
+
+    /*FONTS*/
+    @font-face {
+        font-family: Cormorant Upright;
+        src: url("../assets/fonts/CormorantUpright-Regular.ttf");
+    }
+
+    /*COLORS*/
+    --main-background-color: #F7F2EA;
+
+    --color-green: #A0AD92;
+}
+
+
+body {
+    margin: 0px;
+    background-color: var(--main-background-color);
+}
+
+/*------------ HERO ------------*/
+#heroSection {
+    width: 100vw;
+    height: 500px;
+    display: flex;
+
+    background-image:
+        linear-gradient(to right,
+            rgba(247, 242, 234, 1) 0%,
+            rgba(247, 242, 234, 0.95) 25%,
+            rgba(247, 242, 234, 0.5) 50%,
+            rgba(247, 242, 234, 0) 75%),
+        url("../assets/picture/herobild.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.divInHero {
+    width: 50%;
+}
+
+#choosenItem {
+    color: var(--color-green);
+    font-size: 68px;
+}
+
+h1 {
+    font-family: Cormorant Upright;
+    font-size: 56px;
+}
+
+
+/*------------ HERO SLUT ------------*/
+
+
+main {
+    width: 1140px;
+    min-height: 100vh;
+}
