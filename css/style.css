@@ -1,10 +1,12 @@
-:root {
+/*FONTS*/
+@font-face {
+    font-family: Cormorant Upright;
+    src: url("../assets/fonts/CormorantUpright-Regular.ttf");
+}
 
-    /*FONTS*/
-    @font-face {
-        font-family: Cormorant Upright;
-        src: url("../assets/fonts/CormorantUpright-Regular.ttf");
-    }
+
+
+:root {
 
     /*COLORS*/
     --main-background-color: #F7F2EA;
@@ -23,6 +25,8 @@ body {
     width: 100vw;
     height: 500px;
     display: flex;
+    position: relative;
+
 
     background-image:
         linear-gradient(to right,
@@ -40,19 +44,31 @@ body {
     width: 50%;
 }
 
+.goldStarSize {
+    height: 20px;
+}
+
 #choosenItem {
     color: var(--color-green);
-    font-size: 68px;
+    font-size: 85px;
 }
 
 #textDivInHero {
-    position: relative;
+    position: absolute;
+    top: 70px;
+    left: 196px;
 }
 
 h1 {
     font-family: Cormorant Upright;
-    font-size: 56px;
-    position: absolut;
+    font-size: 65px;
+    margin: 0px;
+}
+
+#textRow {
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
 
 
