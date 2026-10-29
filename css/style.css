@@ -1,23 +1,85 @@
 /*FONTS*/
 @font-face {
-    font-family: Cormorant Upright;
+    font-family: "Cormorant Upright";
     src: url("../assets/fonts/CormorantUpright-Regular.ttf");
 }
 
+@font-face {
+    font-family: "Merriweather";
+    src: url("../assets/fonts/Merriweather.ttf");
+}
 
 
 :root {
 
+    /*FONT SIZE*/
+    --h1: clamp(2.375rem, 5vw, 3.75rem);
+    --h2: clamp(2rem, 3.5vw, 2.5rem);
+    --h3: clamp(1.5rem, 2.5vw, 1.875rem);
+    --h4: 1.5rem;
+
+    --normalText: 1rem;
+    /* 16px */
+    --smallText: 0.875rem;
+    /* 14px */
+    --extraSmallText: 0.75rem;
+    /* 12px */
+
+    --buttonText: 0.9375rem;
+    /* 15px */
+    --eyebrowText: 0.75rem;
+    /* 12px */
+
+    /* FONT FAMILY */
+    --headerFont: "Cormorant Upright", serif;
+    --normalTextFont: "Merriweather", serif;
+
+
     /*COLORS*/
     --main-background-color: #F7F2EA;
+    --color-sageGreen: #A0AD92;
+    --color-dustyRose: #D7B8B5;
+    --color-walnutBrown: #79634F;
+    --color-softBlack: #38352F;
 
-    --color-green: #A0AD92;
+}
+
+h1 {
+    font-family: var(--headerFont);
+    font-size: var(--h1);
+    line-height: 1.1;
+    margin: 24px 0 28px 0;
+}
+
+h2 {
+    font-family: var(--headerFont);
+    font-size: var(--h2);
+    line-height: 1.2;
+}
+
+h3 {
+    font-family: var(--headerFont);
+    font-size: var(--h3);
+    line-height: 1.2;
+}
+
+h4 {
+    font-family: var(--headerFont);
+    font-size: var(--h4);
+}
+
+p {
+    font-family: var(--normalTextFont);
+    font-size: var(--normalText);
+    line-height: 1.6;
 }
 
 
 body {
     margin: 0px;
     background-color: var(--main-background-color);
+    font-family: var(--normalTextFont);
+    font-size: var(--normalText);
 }
 
 /*------------ HERO ------------*/
@@ -45,9 +107,15 @@ body {
     height: 20px;
 }
 
+#heroHeader {
+    font-family: var(--normalTextFont);
+    font-weight: 300;
+}
+
 #choosenItem {
-    color: var(--color-green);
-    font-size: 85px;
+    color: var(--color-sageGreen);
+    font-size: 80px;
+    letter-spacing: 0.06em;
 }
 
 #textDivInHero {
@@ -56,16 +124,26 @@ body {
     left: 16%;
 }
 
-h1 {
-    font-family: Cormorant Upright;
-    font-size: 65px;
-    margin: 0px;
+#p-elInHero {
+    max-width: 550px;
 }
 
-#textRow {
+
+
+.eyebrowText {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 12px;
+
+    font-size: var(--eyebrowText);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--color-walnutBrown);
+}
+
+.eyebrowText p {
+    margin: 0px;
+    font-size: var(--eyebrowText);
 }
 
 
@@ -81,20 +159,71 @@ main {
 
 
 #sectionOne {
-    height: 300px;
-    display: flex;
-    gap: 15px;
+    display: grid;
+    grid-template-columns: minmax(0, 7fr) minmax(0, 3fr);
+    gap: 30px;
+    align-items: start;
 }
 
 #secOneContent {
     border: 1px solid black;
     height: auto;
-    width: 80%;
 }
 
 #aboutMeSpalt {
-    border: 1px solid black;
-    height: auto;
-    width: 20%;
-    padding: 10px;
+    position: sticky;
+    top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*border: 1px solid black;
+    padding: 12px;
+    box-sizing: border-box;
+
+    background-color: #EEE9DF;
+    border: 1px solid #B9A48E;
+    outline: 1px solid #D8C9B9;
+    outline-offset: -8px;
+
+    padding: 32px 28px;
+    border-radius: 3px;*/
+    background-color: #EEE9DF;
+    padding: 35px 25px 65px;
+
+    clip-path: polygon(0 0,
+            100% 0,
+            100% 100%,
+            50% calc(100% - 35px),
+            0 100%);
+
+}
+
+#aboutMeSpalt p {
+    font-size: var(--smallText);
+    margin: 0px;
+}
+
+#aboutMeH3 {
+    margin: 10px 0px;
+}
+
+#aboutMePartOne {
+    display: flex;
+    gap: 10px;
+}
+
+#selfiePic {
+    height: 230px;
+    object-fit: contain;
+    margin: 0px auto;
+}
+
+#ornamentPicture {
+    width: 233px;
+    height: 80px;
+    object-fit: contain;
+}
+
+footer {
+    height: 400px;
 }

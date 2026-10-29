@@ -1,0 +1,28 @@
+:root {
+
+    /*FONT SIZE*/
+    --h1: 60px;
+    --h2: 40px;
+    --h3: 30px;
+    --h4: 24px;
+
+    --normalText: 16px;
+    --smallText: 14px;
+    --extraSmallText: 12px;
+
+    --buttonText: 15px;
+    --eyebrowText: 12px;
+
+    /* FONT FAMILY */
+    --headerFont: "Cormorant Upright", serif;
+    --normalTextFont: "Merriweather", serif;
+
+
+    /*COLORS*/
+    --main-background-color: #F7F2EA;
+    --color-sageGreen: #A0AD92;
+    --color-dustyRose: #D7B8B5;
+    --color-walnutBrown: #79634F;
+    --color-softBlack: #38352F;
+
+}
