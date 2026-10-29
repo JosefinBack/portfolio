@@ -27,7 +27,6 @@ body {
     display: flex;
     position: relative;
 
-
     background-image:
         linear-gradient(to right,
             rgba(247, 242, 234, 1) 0%,
@@ -40,9 +39,7 @@ body {
     background-size: cover;
 }
 
-.divInHero {
-    width: 50%;
-}
+
 
 .goldStarSize {
     height: 20px;
@@ -56,7 +53,7 @@ body {
 #textDivInHero {
     position: absolute;
     top: 70px;
-    left: 196px;
+    left: 16%;
 }
 
 h1 {
@@ -76,6 +73,28 @@ h1 {
 
 
 main {
-    width: 1140px;
+    width: 1250px;
     min-height: 100vh;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+#sectionOne {
+    height: 300px;
+    display: flex;
+    gap: 15px;
+}
+
+#secOneContent {
+    border: 1px solid black;
+    height: auto;
+    width: 80%;
+}
+
+#aboutMeSpalt {
+    border: 1px solid black;
+    height: auto;
+    width: 20%;
+    padding: 10px;
 }
