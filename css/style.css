@@ -180,37 +180,38 @@ main {
     align-items: start;
 }
 
-#secOneContent {
-    border: 1px solid black;
-    height: auto;
-}
 
 #choosenProjects {
     display: flex;
     gap: 20px;
     justify-content: space-evenly;
-    height: 500px;
+    height: 530px;
 }
 
 .projectDIV {
-    border: 1px solid black;
+    border: 5px double var(--color-sageGreen);
     width: 100%;
-    padding: 10px;
+    padding: 20px 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
+.topDIV,
+.bottomDIV {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .projectDIV h4 {
     text-align: center;
-    margin: 20px 0px;
+    margin: 10px 0px 20px;
 }
 
 .projectPictue {
-    height: 150px;
-    width: auto;
-    background-color: red;
-    margin-bottom: 25px;
+    width: 80%;
+    object-fit: cover;
 }
 
 .projekctPresentation {
