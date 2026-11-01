@@ -147,7 +147,7 @@ body {
 }
 
 
-/*------------ HERO SLUT ------------*/
+/*------------ HERO END ------------*/
 
 
 main {
@@ -157,6 +157,7 @@ main {
     margin-left: auto;
 }
 
+/*------------ PROJECTS ------------*/
 
 #sectionOne {
     display: grid;
@@ -169,6 +170,47 @@ main {
     border: 1px solid black;
     height: auto;
 }
+
+#choosenProjects {
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    height: 400px;
+}
+
+.projectDIV {
+    border: 1px solid black;
+    width: 100%;
+    padding: 10px;
+}
+
+.projectDIV h4 {
+    text-align: center;
+    margin: 10px 0px 20px;
+}
+
+.projectPictue {
+    height: 150px;
+    width: auto;
+    background-color: red;
+    margin-bottom: 10px;
+}
+
+.projekctPresentation {
+    font-size: var(--smallText);
+    margin: 2px;
+}
+
+.BtnToProjekt p {
+    font-size: var(--extraSmallText);
+}
+
+
+/*------------ PROJECTS END ------------*/
+
+
+
+/*------------ ABOUT ME ------------*/
 
 #aboutMeSpalt {
     position: sticky;
@@ -223,6 +265,9 @@ main {
     height: 80px;
     object-fit: contain;
 }
+
+/*------------ ABOUT ME - END------------*/
+
 
 footer {
     height: 400px;
