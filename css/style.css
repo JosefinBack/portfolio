@@ -9,6 +9,11 @@
     src: url("../assets/fonts/Merriweather.ttf");
 }
 
+@font-face {
+    font-family: "Lato";
+    src: url("../assets/fonts/Lato-Regular.ttf");
+}
+
 
 :root {
 
@@ -25,14 +30,15 @@
     --extraSmallText: 0.75rem;
     /* 12px */
 
-    --buttonText: 0.9375rem;
-    /* 15px */
+    --buttonText: 0.875rem;
+    /* 14px */
     --eyebrowText: 0.75rem;
     /* 12px */
 
     /* FONT FAMILY */
     --headerFont: "Cormorant Upright", serif;
     --normalTextFont: "Merriweather", serif;
+    --btnFont: "Lato", serif;
 
 
     /*COLORS*/
@@ -73,6 +79,14 @@ p {
     font-size: var(--normalText);
     line-height: 1.6;
 }
+
+button {
+    font-family: var(--btnFont);
+    font-size: var(--buttonText);
+    letter-spacing: 0.08em;
+    border-radius: 10px;
+}
+
 
 
 body {
@@ -175,25 +189,28 @@ main {
     display: flex;
     gap: 20px;
     justify-content: space-evenly;
-    height: 400px;
+    height: 500px;
 }
 
 .projectDIV {
     border: 1px solid black;
     width: 100%;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .projectDIV h4 {
     text-align: center;
-    margin: 10px 0px 20px;
+    margin: 20px 0px;
 }
 
 .projectPictue {
     height: 150px;
     width: auto;
     background-color: red;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 
 .projekctPresentation {
@@ -201,9 +218,23 @@ main {
     margin: 2px;
 }
 
-.BtnToProjekt p {
-    font-size: var(--extraSmallText);
+.BtnToProjekt {
+    width: 80%;
+    padding: 16px;
+    font-weight: 600;
+    background-color: var(--color-sageGreen);
+    border: none;
+    color: var(--main-background-color);
+    cursor: pointer;
 }
+
+.BtnToProjekt:hover {
+    background-color: var(--main-background-color);
+    color: var(--color-sageGreen);
+    border: 0.5px solid var(--color-sageGreen);
+    cursor: pointer;
+}
+
 
 
 /*------------ PROJECTS END ------------*/
@@ -230,7 +261,7 @@ main {
     padding: 32px 28px;
     border-radius: 3px;*/
     background-color: #EEE9DF;
-    padding: 35px 25px 65px;
+    padding: 35px 35px 80px;
 
     clip-path: polygon(0 0,
             100% 0,
