@@ -18,10 +18,14 @@
 :root {
 
     /*FONT SIZE*/
-    --h1: clamp(2.375rem, 5vw, 3.75rem);
-    --h2: clamp(2rem, 3.5vw, 2.5rem);
-    --h3: clamp(1.5rem, 2.5vw, 1.875rem);
+    --h1: 3.125rem;
+    /* 50px */
+    --h2: 2.5rem;
+    /* 40px */
+    --h3: 1.875rem;
+    /* 30px */
     --h4: 1.5rem;
+    /* 24px */
 
     --normalText: 1rem;
     /* 16px */
@@ -51,16 +55,19 @@
 }
 
 h1 {
-    font-family: var(--headerFont);
+    font-family: var(--normalTextFont);
     font-size: var(--h1);
     line-height: 1.1;
-    margin: 24px 0 28px 0;
+    margin: 24px 0 5px 0;
+    font-weight: 300;
 }
 
 h2 {
     font-family: var(--headerFont);
     font-size: var(--h2);
     line-height: 1.2;
+    margin: 0px;
+    margin-bottom: 15px;
 }
 
 h3 {
@@ -103,46 +110,45 @@ body {
     display: flex;
     position: relative;
 
-    background-image:
-        linear-gradient(to right,
-            rgba(247, 242, 234, 1) 0%,
-            rgba(247, 242, 234, 0.95) 25%,
-            rgba(247, 242, 234, 0.5) 50%,
-            rgba(247, 242, 234, 0) 75%),
-        url("../assets/picture/herobild.png");
+    background-image: url("/assets/picture/herobildMig2.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    max-width: 1250px;
+    margin: 50px auto;
 }
 
+#deviderDIV {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
 
+.deviderLine {
+    object-fit: contain;
+    height: 1px;
+    width: 265px;
+}
 
 .goldStarSize {
     height: 20px;
 }
 
-#heroHeader {
-    font-family: var(--normalTextFont);
-    font-weight: 300;
-}
-
-#choosenItem {
+#heroHeaderTwo {
+    font-style: italic;
     color: var(--color-sageGreen);
-    font-size: 80px;
-    letter-spacing: 0.06em;
 }
 
 #textDivInHero {
     position: absolute;
-    top: 70px;
-    left: 16%;
+    top: 80px;
+    left: 11%;
 }
 
 #p-elInHero {
     max-width: 550px;
 }
-
-
 
 .eyebrowText {
     display: flex;
