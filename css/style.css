@@ -128,7 +128,7 @@ body {
     background-size: cover;
 
     max-width: 1250px;
-    margin: 50px auto;
+    margin: 50px auto 90px;
 }
 
 #deviderDIV {
@@ -143,6 +143,12 @@ body {
     width: 265px;
 }
 
+.deviderLineInCard {
+    object-fit: contain;
+    height: 1px;
+    width: 100%;
+}
+
 .goldStarSize {
     height: 20px;
 }
@@ -150,6 +156,7 @@ body {
 #heroHeaderTwo {
     font-style: italic;
     color: var(--color-sageGreen);
+    margin-bottom: 10px;
 }
 
 #textDivInHero {
@@ -199,10 +206,7 @@ main {
 /*------------ PROJECTS ------------*/
 
 #sectionOne {
-    display: grid;
-    grid-template-columns: minmax(0, 7fr) minmax(0, 3fr);
-    gap: 30px;
-    align-items: start;
+    width: 100%;
 }
 
 
@@ -216,7 +220,7 @@ main {
 .projectDIV {
     border: 5px double var(--color-sageGreen);
     width: 100%;
-    padding: 20px 10px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -235,13 +239,20 @@ main {
 }
 
 .projectPictue {
-    width: 80%;
+    width: 100%;
+    height: 245px;
     object-fit: cover;
+    object-position: top;
 }
 
 .projekctPresentation {
     font-size: var(--smallText);
     margin: 2px;
+}
+
+.projectHeadline {
+    width: 100%;
+    margin: 15px 0px;
 }
 
 .BtnToProjekt {
@@ -328,4 +339,31 @@ main {
 
 footer {
     height: 400px;
+}
+
+
+
+
+
+/*video*/
+.laptop {
+    position: relative;
+    width: 100%;
+    margin: 25px 0px;
+}
+
+.laptop img {
+    position: relative;
+    width: 100%;
+    display: block;
+    pointer-events: none;
+}
+
+.laptop video {
+    position: absolute;
+    width: 80%;
+    height: 85%;
+    top: 4%;
+    left: 10%;
+    object-fit: cover;
 }
