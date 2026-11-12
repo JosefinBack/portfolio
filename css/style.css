@@ -51,6 +51,7 @@
     --color-dustyRose: #D7B8B5;
     --color-walnutBrown: #79634F;
     --color-softBlack: #38352F;
+    --color-beige: #E7DAC7;
 
 }
 
@@ -214,7 +215,7 @@ main {
     display: flex;
     gap: 20px;
     justify-content: space-evenly;
-    height: 530px;
+    /*height: 530px;*/
 }
 
 .projectDIV {
@@ -231,6 +232,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 25px;
 }
 
 .projectDIV h4 {
@@ -255,8 +257,24 @@ main {
     margin: 15px 0px;
 }
 
+.taggsDIV {
+    display: flex;
+    gap: 10px;
+    justify-content: start;
+    width: 100%;
+    margin: 20px 0px;
+}
+
+.taggStyle span {
+    padding: 5px 10px;
+    border: 0.5px solid var(--color-dustyRose);
+    background-color: var(--color-beige);
+    font-size: var(--extraSmallText);
+    border-radius: 10px;
+}
+
 .BtnToProjekt {
-    width: 80%;
+    width: 70%;
     padding: 16px;
     font-weight: 600;
     background-color: var(--color-sageGreen);
