@@ -46,7 +46,7 @@
 
 
     /*COLORS*/
-    --main-background-color: #F7F2EA;
+    --main-background-color: #F7EEE6;
     --color-sageGreen: #A0AD92;
     --color-dustyRose: #D7B8B5;
     --color-walnutBrown: #79634F;
@@ -59,7 +59,7 @@ h1 {
     font-family: var(--normalTextFont);
     font-size: var(--h1);
     line-height: 1.1;
-    margin: 24px 0 5px 0;
+    margin: 35px 0 15px 0;
     font-weight: 300;
 }
 
@@ -118,18 +118,22 @@ body {
 
 /*------------ HERO ------------*/
 #heroSection {
-    width: 100vw;
     height: 500px;
     display: flex;
     position: relative;
-
     background-image: url("/assets/picture/herobildMig3.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 
     max-width: 1250px;
-    margin: 50px auto 90px;
+    margin: 50px auto 20px;
+}
+
+#textDivInHero {
+    position: absolute;
+    top: 20%;
+    left: 12%;
 }
 
 #deviderDIV {
@@ -160,11 +164,6 @@ body {
     margin-bottom: 10px;
 }
 
-#textDivInHero {
-    position: absolute;
-    top: 80px;
-    left: 12%;
-}
 
 #heroButtonDiv {
     display: flex;
@@ -172,8 +171,9 @@ body {
     margin-top: 25px;
 }
 
-#p-elInHero {
-    max-width: 550px;
+#p-elInHero p {
+    max-width: 320px;
+    font-size: var(--smallText);
 }
 
 .eyebrowText {
@@ -194,6 +194,110 @@ body {
 
 
 /*------------ HERO END ------------*/
+
+
+/*------------ MENU START ------------*/
+
+#menuWrapper {
+    border-bottom: 3px double var(--color-sageGreen);
+}
+
+#menu {
+    max-width: 1250px;
+    min-width: 900px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0px auto;
+    padding: 20px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: var(--color-sageGreen);
+    font-family: var(--headerFont);
+    font-size: 23px;
+    letter-spacing: 3px;
+}
+
+#menu {
+    padding-bottom: 55px;
+}
+
+#menu a {
+    position: relative;
+    display: inline-block;
+}
+
+.botanical {
+    position: absolute;
+    width: 155px;
+    height: 54px;
+    left: 50%;
+    top: calc(35% + 2px);
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+
+.botanical img {
+    position: absolute;
+    display: block;
+}
+
+.botanical .vine {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    clip-path: inset(0 100% 0 0);
+    transition: clip-path .8s ease;
+}
+
+.botanical .bloom {
+    opacity: 0;
+    transform: scale(.1);
+    transition: opacity .22s ease, transform .38s cubic-bezier(.2, 1.35, .4, 1);
+}
+
+/* Positionerna följer originalillustrationens blommor */
+.botanical .bloom-1 {
+    width: 7.781%;
+    left: 34.346%;
+    top: 38.398%;
+    transition-delay: .35s;
+}
+
+.botanical .bloom-2 {
+    width: 7.413%;
+    left: 54.144%;
+    top: 42.127%;
+    transition-delay: .55s;
+}
+
+.botanical .bloom-3 {
+    width: 12.385%;
+    left: 68.186%;
+    top: 16.575%;
+    transition-delay: .75s;
+}
+
+#menu a:hover .vine,
+#menu a:focus-visible .vine {
+    clip-path: inset(0 0 0 0);
+}
+
+#menu a:hover .bloom,
+#menu a:focus-visible .bloom {
+    opacity: 1;
+    transform: scale(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .botanical img {
+        transition: none !important;
+    }
+}
+
+/*------------ MENU END ------------*/
+
 
 
 main {
@@ -227,11 +331,13 @@ main {
     justify-content: space-between;
 }
 
-.topDIV,
-.bottomDIV {
+.topDIV {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.bottomDIV {
     margin-top: 25px;
 }
 
@@ -274,11 +380,11 @@ main {
 }
 
 .BtnToProjekt {
-    width: 70%;
+    width: 100%;
     padding: 16px;
     font-weight: 600;
     background-color: var(--color-sageGreen);
-    border: none;
+    border: 0.5px solid var(--color-sageGreen);
     color: var(--main-background-color);
     cursor: pointer;
 }
@@ -286,7 +392,6 @@ main {
 .BtnToProjekt:hover {
     background-color: var(--main-background-color);
     color: var(--color-sageGreen);
-    border: 0.5px solid var(--color-sageGreen);
     cursor: pointer;
 }
 
