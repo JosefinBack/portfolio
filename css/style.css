@@ -136,7 +136,7 @@ body {
     left: 12%;
 }
 
-.deviderDIV {
+/* .deviderDIV {
     display: flex;
     align-items: center;
     gap: 7px;
@@ -149,9 +149,31 @@ body {
 }
 
 .deviderLineInCard {
+
     object-fit: contain;
     height: 1px;
+    width: 265px;
+
+    object-fit: contain;
+    height: 1px;
+    width: 100%; 
+} */
+
+
+.deviderDIV {
+    display: flex;
+    align-items: center;
+    gap: 7px;
     width: 100%;
+    min-width: 0;
+}
+
+.deviderLineInCard {
+    flex: 1 1 0;
+    min-width: 0;
+    width: 0;
+    height: 1px;
+    object-fit: fill;
 }
 
 .goldStarSize {
