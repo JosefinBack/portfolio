@@ -121,7 +121,7 @@ body {
     height: 500px;
     display: flex;
     position: relative;
-    background-image: url("assets/picture/herobildMig3.png");
+    background-image: url("../assets/picture/herobildMig3.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -136,7 +136,7 @@ body {
     left: 12%;
 }
 
-#deviderDIV {
+.deviderDIV {
     display: flex;
     align-items: center;
     gap: 7px;
