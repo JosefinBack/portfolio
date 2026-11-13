@@ -1,17 +1,17 @@
 /*FONTS*/
 @font-face {
     font-family: "Cormorant Upright";
-    src: url("/assets/fonts/CormorantUpright-Regular.ttf");
+    src: url("../assets/fonts/CormorantUpright-Regular.ttf");
 }
 
 @font-face {
     font-family: "Merriweather";
-    src: url("/assets/fonts/Merriweather.ttf");
+    src: url("../assets/fonts/Merriweather.ttf");
 }
 
 @font-face {
     font-family: "Lato";
-    src: url("/assets/fonts/Lato-Regular.ttf");
+    src: url("../assets/fonts/Lato-Regular.ttf");
 }
 
 
@@ -121,7 +121,7 @@ body {
     height: 500px;
     display: flex;
     position: relative;
-    background-image: url("/assets/picture/herobildMig3.png");
+    background-image: url("assets/picture/herobildMig3.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
