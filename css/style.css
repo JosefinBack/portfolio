@@ -543,9 +543,9 @@ footer {
 .laptop video,
 .projektIMG {
     position: absolute;
-    width: 80%;
+    width: 82%;
     height: 85%;
     top: 4%;
-    left: 10%;
+    left: 9%;
     object-fit: cover;
 }
