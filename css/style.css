@@ -150,12 +150,16 @@ body {
 #heroSection {
     background: linear-gradient(180deg, #C4CEB9 20%, #E2E7DB 60%, #F7EEE6 95%);
 
-    height: 200px;
     display: flex;
-    gap: 30px;
-    padding-top: 80px;
+    flex-direction: column;
+    padding-top: 30px;
     justify-content: center;
     margin-bottom: 50px;
+}
+
+.flexDIV {
+    display: flex;
+    justify-content: center;
 }
 
 #headerTextTwo {
@@ -170,9 +174,10 @@ body {
 #headerText {
     display: flex;
     align-items: center;
-    gap: 16px;
+    justify-content: center;
+    gap: 20px;
     font-family: var(--headerFont);
-    font-size: var(--normalText);
+    font-size: 20px;
     letter-spacing: 0.15em;
     text-transform: uppercase;
     color: var(--color-walnutBrown);
@@ -180,12 +185,17 @@ body {
 
 #profilepic {
     object-fit: contain;
-    height: 250px;
+    height: 230px;
 }
 
 #flowerLineHeader {
     object-fit: cover;
-    width: 100%;
+    width: 95%;
+}
+
+#flowerLineDIV {
+    display: flex;
+    justify-content: center;
 }
 
 /*------------ HERO END ------------*/
@@ -193,35 +203,24 @@ body {
 
 /*------------ MENU START ------------*/
 
-#menuWrapper {
-    border-bottom: 3px double var(--color-sageGreen);
-}
-
 #menu {
-    max-width: 1250px;
-    min-width: 900px;
+    max-width: 1100px;
     display: flex;
     justify-content: space-evenly;
     margin: 0px auto;
-    padding: 20px;
+    padding: 40px 0px 80px;
 }
 
 #menu a {
     text-decoration: none;
-    color: var(--color-sageGreen);
+    color: var(--color-walnutBrown);
     font-family: var(--headerFont);
     font-size: 23px;
     letter-spacing: 3px;
 }
 
-#menu {
-    padding-bottom: 55px;
-}
-
-
 #textDivInHero {
     display: flex;
-    flex-direction: column;
 }
 
 
@@ -240,6 +239,7 @@ main {
 
 #sectionOne {
     width: 100%;
+    margin-top: 100px;
 }
 
 
@@ -247,7 +247,7 @@ main {
     display: flex;
     gap: 20px;
     justify-content: space-evenly;
-    /*height: 530px;*/
+    margin-top: 50px;
 }
 
 .projectDIV {
