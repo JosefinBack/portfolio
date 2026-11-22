@@ -114,10 +114,9 @@ body {
     font-size: var(--normalText);
 }
 
+
 .a-links {
     text-decoration: none;
-    color: var(--color-beige);
-    font-size: var(--buttonText);
 }
 
 .a-links:hover {
@@ -307,7 +306,7 @@ main {
     border-radius: 10px;
 }
 
-.BtnToProjekt {
+/* .BtnToProjekt {
     width: 100%;
     padding: 16px;
     font-weight: 600;
@@ -315,12 +314,41 @@ main {
     border: 0.5px solid var(--color-sageGreen);
     color: var(--main-background-color);
     cursor: pointer;
+    text-decoration: none;
 }
 
 .BtnToProjekt:hover {
     background-color: var(--main-background-color);
     color: var(--color-sageGreen);
     cursor: pointer;
+} */
+
+.BtnToProjekt {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+
+    font-family: var(--btnFont);
+    font-size: var(--buttonText);
+    font-weight: 600;
+
+    background-color: var(--color-sageGreen);
+    border: 1px solid var(--color-sageGreen);
+    border-radius: 10px;
+    color: var(--main-background-color);
+
+    cursor: pointer;
+    transition: background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+.BtnToProjekt:hover {
+    background-color: var(--main-background-color);
+    color: var(--color-sageGreen);
 }
 
 
@@ -390,6 +418,7 @@ main {
 
 footer {
     height: 400px;
+    background: linear-gradient(360deg, #C4CEB9 20%, #E2E7DB 60%, #F7EEE6 95%);
 }
 
 
