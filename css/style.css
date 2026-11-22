@@ -116,6 +116,16 @@ body {
     font-size: var(--normalText);
 }
 
+.a-links {
+    text-decoration: none;
+    color: var(--color-beige);
+    font-size: var(--buttonText);
+}
+
+.a-links:hover {
+    color: var(--color-sageGreen);
+}
+
 /*------------ HERO ------------*/
 #heroSection {
     height: 500px;
