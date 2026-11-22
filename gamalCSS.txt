@@ -26,3 +26,116 @@
     --color-softBlack: #38352F;
 
 }
+
+
+
+/* Behållaren för grenen och blommorna */
+.botanical {
+    position: relative;
+    display: block;
+    width: 600px;
+    aspect-ratio: 155 / 54;
+    margin: 5px auto 0;
+    pointer-events: none;
+}
+
+/* Alla bilder placeras inuti behållaren */
+.botanical img {
+    position: absolute;
+    display: block;
+}
+
+/* Grenen växer fram direkt */
+.botanical .vine {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+
+    clip-path: inset(0 100% 0 0);
+    animation: growVine 3s linear forwards;
+}
+
+/* Blommorna är dolda från början */
+.botanical .bloom {
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: center;
+
+    animation: bloomFlower 0.7s ease-out forwards;
+}
+
+/* Första blomman */
+.botanical .bloom-1 {
+    width: 7.781%;
+    left: 34.346%;
+    top: 38.398%;
+
+    animation-delay: 0.8s;
+}
+
+/* Andra blomman */
+.botanical .bloom-2 {
+    width: 7.413%;
+    left: 54.144%;
+    top: 42.127%;
+
+    animation-delay: 1.5s;
+}
+
+/* Tredje blomman */
+.botanical .bloom-3 {
+    width: 12.385%;
+    left: 68.186%;
+    top: 16.575%;
+
+    animation-delay: 2.1s;
+}
+
+/* Grenen växer från vänster till höger */
+@keyframes growVine {
+    from {
+        clip-path: inset(0 100% 0 0);
+    }
+
+    to {
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+/* Blommorna slår ut */
+@keyframes bloomFlower {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    70% {
+        opacity: 1;
+        transform: scale(1.15);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Anpassning för minskad rörelse */
+@media (prefers-reduced-motion: reduce) {
+
+    .botanical .vine,
+    .botanical .bloom {
+        animation: none;
+    }
+
+    .botanical .vine {
+        clip-path: none;
+    }
+
+    .botanical .bloom {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
